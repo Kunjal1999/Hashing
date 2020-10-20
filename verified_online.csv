@@ -1,3 +1,4 @@
+phish_id,url,phish_detail_url,submission_time,verified,verification_time,online,target
 6814096,https://kalicad.com/.../AbSa/ac8f800a620a7a77e3a235e0b017d58b/login.php?cmd=login_submit&id=615373ea7a455ec9eaf86326f56dd2ad615373ea7a455ec9eaf86326f56dd2ad&session=615373ea7a455ec9eaf86326f56dd2ad615373ea7a455ec9eaf86326f56dd2ad,http://www.phishtank.com/phish_detail.php?phish_id=6814096,2020-10-19T14:40:29+00:00,yes,2020-10-19T14:42:00+00:00,yes,"ABSA Bank"
 6813998,http://susp.faceb00kcom-738504525.m7md1.sa/nextVRF.html?location=ba24fe5395fa476c9d90a468632cfa9b,http://www.phishtank.com/phish_detail.php?phish_id=6813998,2020-10-19T14:03:39+00:00,yes,2020-10-19T14:42:41+00:00,yes,Other
 6813997,http://read-56599139.ottombil.com/gate.html?location=889de418945d185cbbe913d9a500f43a,http://www.phishtank.com/phish_detail.php?phish_id=6813997,2020-10-19T14:03:34+00:00,yes,2020-10-19T14:42:00+00:00,yes,Other
