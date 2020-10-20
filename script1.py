@@ -7,7 +7,7 @@ import Vector_creator as Vc
 import time
 
 ###Reading the training Dataset file
-df_object=pd.read_csv('verified_online.csv',header=0)
+df_object=pd.read_csv('benign_url.csv',header=0)
 #print(df_object.info())
 #print("\nHeader:\n",df_object.head(5))
 
@@ -27,13 +27,13 @@ print('And we go.....3,2,1')
 time.sleep(3)
 
 ###Starting To Store information on Each URL
-for i in range(len(df_object['url'])):
-	vec=Vc.Construct_Vector(df_object.url[i])
+for i in range(len(df_object['URL'])):
+	vec=Vc.Construct_Vector(df_object.URL[i])
 	training_df.loc[i]=vec
 	print('Training example :',i,"done")
 #training_df['URL']=df_object['URL']
-training_df['Lable']=1
-training_df['URL']=df_object.url
+training_df['Lable']=0
+training_df['URL']=df_object.URL
 del(df_object)
 	
 print('all done feature values for training set obtained')
@@ -41,5 +41,5 @@ print('all done feature values for training set obtained')
 #print('\n\n\n',training_df.head(2))
 #print(len_URL)	
 
-training_df.to_csv('kunju2.csv')
+training_df.to_csv('kunju3.csv')
 
