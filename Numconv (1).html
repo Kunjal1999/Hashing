@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Experiment No 09</title>
+	<style> 
+		div{
+			width: 400px;
+			height: 200px;
+			margin-top: 150px ;
+			margin-left: 450px;
+			border: 5px solid black;
+			padding-top: 50px;
+			padding-left: 50px;
+			background-color: white;
+		}
+		body{
+			background-color: #80dfff;
+		}
+	</style>
+</head>
+<body>
+<h1><center>Number Converter Application</center></h1>
+
+<div>
+<label for=decimali>Decimal (10) &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type=text id="decimali" placeholder="Enter Decimal no." onkeyup="convert();">
+
+<br><br>
+<label for=binaryi>Binary (2) &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type=text id="binaryi" placeholder="Enter Binary no." onkeyup="convert1();">
+
+<br>
+<br>
+<label for=octali>Octal (8) &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type=text id="octali" placeholder="Enter Octal no." onkeyup="convert2()">
+
+<br>
+<br>
+<label for=hexi>Hexadecimal (16) &nbsp&nbsp&nbsp&nbsp</label>
+<input type=text id="hexi" placeholder="Enter Hexadecimal no." onkeyup="convert3()"  >
+</div>
+
+<script>
+function convert()
+{
+var d=document.getElementById("decimali").value;
+document.getElementById("binaryi").value=parseInt(d,10).toString(2);
+document.getElementById("octali").value=parseInt(d,10).toString(8);
+document.getElementById("hexi").value=parseInt(d,10).toString(16);
+
+}
+function convert1()
+{
+var d1=document.getElementById("binaryi").value;
+document.getElementById("decimali").value=parseInt(d1,2).toString(10);
+document.getElementById("octali").value=parseInt(d1,2).toString(8);
+document.getElementById("hexi").value=parseInt(d1,2).toString(16);
+
+}
+function convert2()
+{
+var d2=document.getElementById("octali").value;
+document.getElementById("decimali").value=parseInt(d2,8).toString(10);
+document.getElementById("binaryi").value=parseInt(d2,8).toString(2);
+document.getElementById("hexi").value=parseInt(d2,8).toString(16);
+
+}
+function convert3()
+{
+var d3=document.getElementById("hexi").value;
+document.getElementById("decimali").value=parseInt(d3,16).toString(10);
+document.getElementById("binaryi").value=parseInt(d3,16).toString(2);
+document.getElementById("octali").value=parseInt(d3,16).toString(8);
+}
+</script>
+</body>
+</html>
